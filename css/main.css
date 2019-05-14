@@ -1,0 +1,188 @@
+@font-face {
+			font-family: "GothamProRegular";
+			src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+			src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+			url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+  @font-face {
+  			font-family: "GothamProLight";
+  			src: url("../fonts/GothamProLight/GothamProLight.eot");
+  			src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+  			url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+  			url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  			font-style: normal;
+  			font-weight: normal;
+  	}
+
+body{
+  background: url(../img/background.png) no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: 'GothamProRegular', sans-serif;
+}
+
+.hint {
+  width: 1024px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 685px;
+}
+
+.hint p {
+  color: #fff;
+  font-family: 'GothamProLight', sans-serif;
+  text-align: center;
+  font-size: 12pt;
+  margin: 0;
+}
+
+.hint img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+.circle {
+  color: #0d319c;
+  font-size: 14pt;
+}
+
+.text-box {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+#circle1 {
+  position:absolute;
+  top: 250px;
+  left: 550px;
+  width: 220px;
+  display: flex;
+}
+
+#circle2 {
+  position:absolute;
+  top: 340px;
+  left: 220px;
+  display: inline-block;
+  width: 140px;
+}
+
+#circle2 svg {
+  padding-left: 35%;
+}
+
+#circle3 {
+  position:absolute;
+  top: 454px;
+  left: 405px;
+  display: inline-block;
+  width: 160px;
+}
+
+#circle3 svg {
+  padding-left: 45%;
+}
+
+#circle4 {
+  position:absolute;
+  top: 435px;
+  left: 757px;
+  display: inline-block;
+  width: 140px;
+}
+
+#circle4 svg {
+  padding-left: 45%;
+}
+
+#circle1 p {
+  margin: auto;
+}
+
+#section0 h1 {
+  color: #0d319c;
+  font-size: 35pt;
+  position: absolute;
+  top: 140px;
+  right: 227px;
+  left: 45px;
+  margin: 0;
+}
+
+#section1 {
+  background: url(../img/bg_2.png) no-repeat;
+  background-size: cover;
+}
+
+#slide1 {
+  background: url(../img/ice_1.png) no-repeat;
+  background-size: cover;
+}
+
+#slide2 {
+  background: url(../img/ice_2.png) no-repeat;
+  background-size: cover;
+}
+
+#slide3 {
+  background: url(../img/ice_3.png) no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  color: #fff;
+  font-family: 'GothamProLight', sans-serif;
+  text-align: center;
+  font-size: 35pt;
+  padding: 0px 270px 135px 270px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 20pt;
+  margin-top: 0;
+}
+
+.slide-container {
+  margin: 115px 128px 128px 128px;
+}
+
+.slide-container img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #fff !important;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    background: #f78b1f !important;
+}
