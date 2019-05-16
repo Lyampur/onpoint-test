@@ -6,10 +6,14 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/fullpage.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/slider.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -17,8 +21,6 @@
         scrollBar:true,
         navigation: true,
 	      navigationPosition: 'right',
-        slidesNavigation: false,
-	      slidesNavPosition: 'bottom',
         paddingTop: '20px',
         paddingBottom: '0px'
       });
@@ -144,25 +146,16 @@
     </div>
 
     <div class="section" id="section2">
-      <div class="slide" id="slide1">
-        <div class="slide-container">
-          <h3>Звенья патогенеза</h3>
-          <img src="img/tab_1.png" alt="Звенья патогенеза">
-        </div>
-      </div>
 
-      <div class="slide" id="slide2">
-        <div class="slide-container">
-          <h3>Смертельный октет</h3>
-          <img src="img/tab_2.png" alt="Смертельный октет">
+      <div class="slideshow-container">
+        <h3 id="headline">Звенья патогенеза</h3>
+        <div class="slideshow">
+          <img src="img/tab_1.png" id='slide'/>
         </div>
-      </div>
-
-      <div class="slide" id="slide3">
-        <div class="slide-container">
-          <h3>Звенья патогенеза СД2</h3>
-          <img src="img/tab_3.png" alt="Звенья патогенеза СД2">
-        </div>
+        <div id="slider"></div>
+        <p id="date1">1988</p>
+        <p id="date2">2009</p>
+        <p id="date3">2016</p>
       </div>
 
     </div>
