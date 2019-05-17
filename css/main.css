@@ -48,12 +48,105 @@ body{
   max-width: 100%;
 }
 
-.circle {
+@keyframes circle {
+  from {
+    transform: scale(0);
+    border: 1px solid #de791b;
+    background: rgba(214, 66, 42, 1);
+  }
+  to {
+    transform: scale(1);
+    border: 1px solid #cf1437;
+    background: rgba(247, 139, 31, 0.1);
+  }
+}
+
+.circle-1 {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+	top: 260px;
+  left: 562px;
+}
+
+.circle-2 {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+	top: 425px;
+  left: 272px;
+}
+
+.circle-3 {
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+	top: 535px;
+  left: 480px;
+}
+
+.circle-4 {
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+	top: 515px;
+  left: 820px;
+}
+
+.master {
+  border: 1px solid #cf1437;
+  background: rgba(247, 139, 31, 0.3);
+}
+
+.one {
+  animation: circle 2s infinite ease-in-out;
+}
+
+.two {
+  animation: circle 2s infinite ease-in-out 0.5s;
+}
+
+.three {
+  animation: circle 2s infinite ease-in-out 1s;
+}
+
+.circle-wrap {
   color: #0d319c;
   font-size: 14pt;
 }
 
-.text-box {
+#wrap-1 p {
+	position: absolute;
+	top: 257px;
+	left: 626px;
+}
+
+#wrap-2 p {
+	position: absolute;
+	top: 375px;
+	left: 220px;
+}
+
+#wrap-3 p {
+	position: absolute;
+	top: 485px;
+  left: 370px;
+}
+
+#wrap-4 p {
+	position: absolute;
+	top: 465px;
+  left: 785px;
+}
+/* .text-box {
   height: 100%;
   text-align: center;
   width: 100%;
@@ -64,55 +157,7 @@ body{
    display: inline-block;
    height: 100%;
    vertical-align: middle;
-}
-
-#circle1 {
-  position:absolute;
-  top: 250px;
-  left: 550px;
-  width: 220px;
-  display: flex;
-}
-
-#circle2 {
-  position:absolute;
-  top: 340px;
-  left: 220px;
-  display: inline-block;
-  width: 140px;
-}
-
-#circle2 svg {
-  padding-left: 35%;
-}
-
-#circle3 {
-  position:absolute;
-  top: 454px;
-  left: 405px;
-  display: inline-block;
-  width: 160px;
-}
-
-#circle3 svg {
-  padding-left: 45%;
-}
-
-#circle4 {
-  position:absolute;
-  top: 435px;
-  left: 757px;
-  display: inline-block;
-  width: 140px;
-}
-
-#circle4 svg {
-  padding-left: 45%;
-}
-
-#circle1 p {
-  margin: auto;
-}
+} */
 
 #section0 h1 {
   color: #0d319c;
@@ -126,21 +171,6 @@ body{
 
 #section1 {
   background: url(../img/bg_2.png) no-repeat;
-  background-size: cover;
-}
-
-#slide1 {
-  background: url(../img/ice_1.png) no-repeat;
-  background-size: cover;
-}
-
-#slide2 {
-  background: url(../img/ice_2.png) no-repeat;
-  background-size: cover;
-}
-
-#slide3 {
-  background: url(../img/ice_3.png) no-repeat;
   background-size: cover;
 }
 
